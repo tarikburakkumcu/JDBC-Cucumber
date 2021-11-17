@@ -3,29 +3,29 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2021-11-15T12:08:10.601Z",
-        "line": 4,
-        "name": "TC_18 kullanici veri okur",
+        "start_timestamp": "2021-11-17T20:29:43.829Z",
+        "line": 3,
+        "name": "TC18 Concort Hotel Database Read Test",
         "description": "",
-        "id": "db-baglanma;tc-18-kullanici-veri-okur",
+        "id": "us1012-kulklanici-concort-hotel-database-ini-test-eder;tc18-concort-hotel-database-read-test",
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 1492758700,
+              "duration": 1539896800,
               "status": "passed"
             },
             "line": 5,
-            "name": "kullanici CHQA veritabanina baglanir",
+            "name": "kullanici CHQA database\u0027ine baglanir",
             "match": {
-              "location": "dbStepdefinitions.CHQAstepdefinitions.kullanici_chqa_veritabanina_baglanir()"
+              "location": "dbStepdefinitions.DbStepDefinition.kullanici_chqa_database_ine_baglanir()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 217207300,
+              "duration": 251854200,
               "status": "passed"
             },
             "line": 6,
@@ -41,17 +41,17 @@
                   "offset": 36
                 }
               ],
-              "location": "dbStepdefinitions.CHQAstepdefinitions.kullanici_tablosundaki_verilerini_alir(java.lang.String,java.lang.String)"
+              "location": "dbStepdefinitions.DbStepDefinition.kullanici_tablosundaki_verilerini_alir(java.lang.String,java.lang.String)"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 179709600,
+              "duration": 163800700,
               "status": "passed"
             },
             "line": 7,
-            "name": "kullanici \"Price\" sutunundaki verileri okur",
+            "name": "kullanici \"Price\" sutunundaki verileri okur ve istedigi islemleri yapar",
             "match": {
               "arguments": [
                 {
@@ -59,7 +59,7 @@
                   "offset": 10
                 }
               ],
-              "location": "dbStepdefinitions.CHQAstepdefinitions.kullanici_sutunundaki_verileri_okur(java.lang.String)"
+              "location": "dbStepdefinitions.DbStepDefinition.kullanici_sutunundaki_verileri_okur_ve_istedigi_islemleri_yapar(java.lang.String)"
             },
             "keyword": "And "
           }
@@ -71,9 +71,9 @@
         ]
       }
     ],
-    "name": "Db baglanma",
+    "name": "US1012 Kulklanici concort Hotel database\u0027ini test eder",
     "description": "",
-    "id": "db-baglanma",
+    "id": "us1012-kulklanici-concort-hotel-database-ini-test-eder",
     "keyword": "Feature",
     "uri": "file:src/test/resources/features/US1012_DbRead.feature",
     "tags": []
