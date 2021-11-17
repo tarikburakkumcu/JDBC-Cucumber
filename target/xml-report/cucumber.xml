@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="2.521">
-    <testcase classname="US1012 Kulklanici concort Hotel database'ini test eder" name="TC18 Concort Hotel Database Read Test" time="2.061">
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="3.145">
+    <testcase classname="US1012 Kulklanici concort Hotel database'ini test eder" name="TC18 Concort Hotel Database Read Test" time="2.732">
         <system-out>
             <![CDATA[Given kullanici CHQA database'ine baglanir..................................passed
 And kullanici "tHOTELROOM" tablosundaki "Price" verilerini alir.............passed

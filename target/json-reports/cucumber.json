@@ -3,7 +3,7 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2021-11-17T20:29:43.829Z",
+        "start_timestamp": "2021-11-17T21:17:31.908Z",
         "line": 3,
         "name": "TC18 Concort Hotel Database Read Test",
         "description": "",
@@ -13,7 +13,7 @@
         "steps": [
           {
             "result": {
-              "duration": 1539896800,
+              "duration": 1510412000,
               "status": "passed"
             },
             "line": 5,
@@ -25,7 +25,7 @@
           },
           {
             "result": {
-              "duration": 251854200,
+              "duration": 277850100,
               "status": "passed"
             },
             "line": 6,
@@ -47,7 +47,7 @@
           },
           {
             "result": {
-              "duration": 163800700,
+              "duration": 850536000,
               "status": "passed"
             },
             "line": 7,
