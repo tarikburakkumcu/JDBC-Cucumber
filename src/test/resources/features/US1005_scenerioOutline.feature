@@ -19,3 +19,4 @@ Feature: US1005 amazonda liste ile arama
     |ipod      |
     |armut     |
     |Apple     |
+    |MEHMET    |

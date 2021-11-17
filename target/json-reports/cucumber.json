@@ -1,0 +1,81 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2021-11-15T12:08:10.601Z",
+        "line": 4,
+        "name": "TC_18 kullanici veri okur",
+        "description": "",
+        "id": "db-baglanma;tc-18-kullanici-veri-okur",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1492758700,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "kullanici CHQA veritabanina baglanir",
+            "match": {
+              "location": "dbStepdefinitions.CHQAstepdefinitions.kullanici_chqa_veritabanina_baglanir()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 217207300,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "kullanici \"tHOTELROOM\" tablosundaki \"Price\" verilerini alir",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"tHOTELROOM\"",
+                  "offset": 10
+                },
+                {
+                  "val": "\"Price\"",
+                  "offset": 36
+                }
+              ],
+              "location": "dbStepdefinitions.CHQAstepdefinitions.kullanici_tablosundaki_verilerini_alir(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 179709600,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "kullanici \"Price\" sutunundaki verileri okur",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Price\"",
+                  "offset": 10
+                }
+              ],
+              "location": "dbStepdefinitions.CHQAstepdefinitions.kullanici_sutunundaki_verileri_okur(java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@db"
+          }
+        ]
+      }
+    ],
+    "name": "Db baglanma",
+    "description": "",
+    "id": "db-baglanma",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/US1012_DbRead.feature",
+    "tags": []
+  }
+]
