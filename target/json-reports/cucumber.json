@@ -3,20 +3,20 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2021-11-18T18:54:45.178Z",
-        "line": 3,
-        "name": "TC19 DB Util ile Concort Hotel Database Read Test",
+        "start_timestamp": "2021-11-18T19:30:52.333Z",
+        "line": 12,
+        "name": "Kullanici tHOTEL tablosundan istedigi Emaili update eder",
         "description": "",
-        "id": "us1013-kullanici-db-util-ile-concort-hotel-database-ini-test-eder;tc19-db-util-ile-concort-hotel-database-read-test",
+        "id": "us1013-kullanici-db-util-ile-concort-hotel-database-ini-test-eder;kullanici-thotel-tablosundan-istedigi-emaili-update-eder",
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 1520862000,
+              "duration": 1635128000,
               "status": "passed"
             },
-            "line": 5,
+            "line": 13,
             "name": "kullanici DBUtill ile CHQA database\u0027ine baglanir",
             "match": {
               "location": "dbStepdefinitions.DbUtilStepDefinitions.kullanici_db_utill_ile_chqa_database_ine_baglanir()"
@@ -25,57 +25,30 @@
           },
           {
             "result": {
-              "duration": 267860000,
+              "duration": 608162000,
               "status": "passed"
             },
-            "line": 6,
-            "name": "kullanici DBUtill ile \"tHOTELROOM\" tablosundaki \"Price\" verilerini alir",
+            "line": 14,
+            "name": "DBU IDHotel degeri 1024 olan kaydin Email degerini \"buisbukadar@gmail.com\" yapar",
             "match": {
               "arguments": [
                 {
-                  "val": "\"tHOTELROOM\"",
-                  "offset": 22
+                  "val": "1024",
+                  "offset": 19
                 },
                 {
-                  "val": "\"Price\"",
-                  "offset": 48
+                  "val": "\"buisbukadar@gmail.com\"",
+                  "offset": 51
                 }
               ],
-              "location": "dbStepdefinitions.DbUtilStepDefinitions.kullanici_db_utill_ile_tablosundaki_verilerini_alir(java.lang.String,java.lang.String)"
+              "location": "dbStepdefinitions.DbUtilStepDefinitions.dbuIDHotelDegeriOlanKaydinEmailDegeriniYapar(int,java.lang.String)"
             },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "error_message": "java.lang.NullPointerException\r\n\tat dbStepdefinitions.DbUtilStepDefinitions.kullanici_db_utill_ile_sutunundaki_fiyatin_oldugunu_test_eder(DbUtilStepDefinitions.java:34)\r\n\tat ✽.kullanici DBUtill ile \"Price\" sutunundaki 5. fiyatin 400 oldugunu test eder(file:///C:/Users/Lenovo/IdeaProjects/com.batch30Cucumber/src/test/resources/features/US1013_DbUtilTestler.feature:7)\r\n",
-              "duration": 746219600,
-              "status": "failed"
-            },
-            "line": 7,
-            "name": "kullanici DBUtill ile \"Price\" sutunundaki 5. fiyatin 400 oldugunu test eder",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Price\"",
-                  "offset": 22
-                },
-                {
-                  "val": "5",
-                  "offset": 42
-                },
-                {
-                  "val": "400",
-                  "offset": 53
-                }
-              ],
-              "location": "dbStepdefinitions.DbUtilStepDefinitions.kullanici_db_utill_ile_sutunundaki_fiyatin_oldugunu_test_eder(java.lang.String,java.lang.Integer,java.lang.Integer)"
-            },
-            "keyword": "And "
+            "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@dbutill"
+            "name": "@dbupdate"
           }
         ]
       }

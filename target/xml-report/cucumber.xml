@@ -1,16 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="3.063">
-    <testcase classname="US1013 Kullanici DB Util ile concort Hotel database'ini test eder" name="TC19 DB Util ile Concort Hotel Database Read Test" time="2.659">
-        <failure message="" type="java.lang.NullPointerException">
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="2.802">
+    <testcase classname="US1013 Kullanici DB Util ile concort Hotel database'ini test eder" name="Kullanici tHOTEL tablosundan istedigi Emaili update eder" time="2.346">
+        <system-out>
             <![CDATA[Given kullanici DBUtill ile CHQA database'ine baglanir......................passed
-And kullanici DBUtill ile "tHOTELROOM" tablosundaki "Price" verilerini alir.passed
-And kullanici DBUtill ile "Price" sutunundaki 5. fiyatin 400 oldugunu test eder.failed
-
-StackTrace:
-java.lang.NullPointerException
-	at dbStepdefinitions.DbUtilStepDefinitions.kullanici_db_utill_ile_sutunundaki_fiyatin_oldugunu_test_eder(DbUtilStepDefinitions.java:34)
-	at ✽.kullanici DBUtill ile "Price" sutunundaki 5. fiyatin 400 oldugunu test eder(file:///C:/Users/Lenovo/IdeaProjects/com.batch30Cucumber/src/test/resources/features/US1013_DbUtilTestler.feature:7)
+Then DBU IDHotel degeri 1024 olan kaydin Email degerini "buisbukadar@gmail.com" yapar.passed
 ]]>
-        </failure>
+        </system-out>
     </testcase>
 </testsuite>
