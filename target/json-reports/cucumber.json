@@ -3,79 +3,88 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2021-11-17T21:17:31.908Z",
+        "start_timestamp": "2021-11-18T18:54:45.178Z",
         "line": 3,
-        "name": "TC18 Concort Hotel Database Read Test",
+        "name": "TC19 DB Util ile Concort Hotel Database Read Test",
         "description": "",
-        "id": "us1012-kulklanici-concort-hotel-database-ini-test-eder;tc18-concort-hotel-database-read-test",
+        "id": "us1013-kullanici-db-util-ile-concort-hotel-database-ini-test-eder;tc19-db-util-ile-concort-hotel-database-read-test",
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 1510412000,
+              "duration": 1520862000,
               "status": "passed"
             },
             "line": 5,
-            "name": "kullanici CHQA database\u0027ine baglanir",
+            "name": "kullanici DBUtill ile CHQA database\u0027ine baglanir",
             "match": {
-              "location": "dbStepdefinitions.DbStepDefinition.kullanici_chqa_database_ine_baglanir()"
+              "location": "dbStepdefinitions.DbUtilStepDefinitions.kullanici_db_utill_ile_chqa_database_ine_baglanir()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 277850100,
+              "duration": 267860000,
               "status": "passed"
             },
             "line": 6,
-            "name": "kullanici \"tHOTELROOM\" tablosundaki \"Price\" verilerini alir",
+            "name": "kullanici DBUtill ile \"tHOTELROOM\" tablosundaki \"Price\" verilerini alir",
             "match": {
               "arguments": [
                 {
                   "val": "\"tHOTELROOM\"",
-                  "offset": 10
+                  "offset": 22
                 },
                 {
                   "val": "\"Price\"",
-                  "offset": 36
+                  "offset": 48
                 }
               ],
-              "location": "dbStepdefinitions.DbStepDefinition.kullanici_tablosundaki_verilerini_alir(java.lang.String,java.lang.String)"
+              "location": "dbStepdefinitions.DbUtilStepDefinitions.kullanici_db_utill_ile_tablosundaki_verilerini_alir(java.lang.String,java.lang.String)"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 850536000,
-              "status": "passed"
+              "error_message": "java.lang.NullPointerException\r\n\tat dbStepdefinitions.DbUtilStepDefinitions.kullanici_db_utill_ile_sutunundaki_fiyatin_oldugunu_test_eder(DbUtilStepDefinitions.java:34)\r\n\tat ✽.kullanici DBUtill ile \"Price\" sutunundaki 5. fiyatin 400 oldugunu test eder(file:///C:/Users/Lenovo/IdeaProjects/com.batch30Cucumber/src/test/resources/features/US1013_DbUtilTestler.feature:7)\r\n",
+              "duration": 746219600,
+              "status": "failed"
             },
             "line": 7,
-            "name": "kullanici \"Price\" sutunundaki verileri okur ve istedigi islemleri yapar",
+            "name": "kullanici DBUtill ile \"Price\" sutunundaki 5. fiyatin 400 oldugunu test eder",
             "match": {
               "arguments": [
                 {
                   "val": "\"Price\"",
-                  "offset": 10
+                  "offset": 22
+                },
+                {
+                  "val": "5",
+                  "offset": 42
+                },
+                {
+                  "val": "400",
+                  "offset": 53
                 }
               ],
-              "location": "dbStepdefinitions.DbStepDefinition.kullanici_sutunundaki_verileri_okur_ve_istedigi_islemleri_yapar(java.lang.String)"
+              "location": "dbStepdefinitions.DbUtilStepDefinitions.kullanici_db_utill_ile_sutunundaki_fiyatin_oldugunu_test_eder(java.lang.String,java.lang.Integer,java.lang.Integer)"
             },
             "keyword": "And "
           }
         ],
         "tags": [
           {
-            "name": "@db"
+            "name": "@dbutill"
           }
         ]
       }
     ],
-    "name": "US1012 Kulklanici concort Hotel database\u0027ini test eder",
+    "name": "US1013 Kullanici DB Util ile concort Hotel database\u0027ini test eder",
     "description": "",
-    "id": "us1012-kulklanici-concort-hotel-database-ini-test-eder",
+    "id": "us1013-kullanici-db-util-ile-concort-hotel-database-ini-test-eder",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/US1012_DbRead.feature",
+    "uri": "file:src/test/resources/features/US1013_DbUtilTestler.feature",
     "tags": []
   }
 ]
